@@ -5,6 +5,14 @@ void main() {
         for(int n:numbers){
             IO.print(n+" ");
         }
+        int[] numbers2=getEvenNumbers();
+        for(int n:numbers2){
+            IO.print(n+" ");
+        }
+        int[] numbers3=getOddNumbers();
+        for(int n:numbers3){
+            IO.print(n+" ");
+        }
 }
 int[] getNumbers(){
     int[] numbers=new int[100];
