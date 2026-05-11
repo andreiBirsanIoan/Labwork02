@@ -13,3 +13,27 @@ int[] getNumbers(){
     }
     return numbers;
 }
+int[] getEvenNumbers()
+{
+    int[] evenNumbers=new int[100];
+    int i=0;
+    for(int n:evenNumbers){
+        if(n%2==0)
+        {
+            evenNumbers[i++]=n;
+        }
+    }
+    return evenNumbers;
+}
+int[] getOddNumbers()
+{
+    int[] oddNumbers=new int[100];
+    int i=0;
+    for(int n:oddNumbers){
+        if(n%2==1)
+        {
+            oddNumbers[i++]=n;
+        }
+    }
+    return oddNumbers;
+}
