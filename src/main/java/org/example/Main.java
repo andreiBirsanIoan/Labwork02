@@ -1,45 +1,20 @@
-void main() {
-        int[] numbers=getNumbers();
-        for(int n:numbers){
-            IO.print(n+" ");
-        }
-        int[] numbers2=filterEvenNumbers(numbers);
-        for(int n:numbers2){
-            IO.print(n+" ");
-        }
-        int[] numbers3=filterOddNumbers(numbers);
-        for(int n:numbers3){
-            IO.print(n+" ");
-        }
-}
-int[] getNumbers(){
-    int[] numbers=new int[100];
-    for(int i=1;i<100;i++){
-        numbers[i]=i;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = getNumbers();
+        numbers.stream().forEach(System.out::println);
     }
-    return numbers;
-}
-int[] filterEvenNumbers(int[] numbers)
-{
-    int[] evenNumbers=new int[100];
-    int i=0;
-    for(int n:numbers){
-        if(n%2==0)
-        {
-            evenNumbers[i++]=n;
-        }
+
+    public static ArrayList<Integer> getNumbers() {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i < 101; i++)
+            numbers.add(i);
+        return numbers;
     }
-    return evenNumbers;
-}
-int[] filterOddNumbers(int[] numbers)
-{
-    int[] oddNumbers=new int[100];
-    int i=0;
-    for(int n:numbers){
-        if(n%2==1)
-        {
-            oddNumbers[i++]=n;
-        }
+
+    public static void print(ArrayList<Integer> arr) {
+        for (int x : arr)
+            System.out.println(x);
     }
-    return oddNumbers;
 }
