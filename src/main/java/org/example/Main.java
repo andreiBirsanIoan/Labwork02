@@ -3,11 +3,11 @@ void main() {
         for(int n:numbers){
             IO.print(n+" ");
         }
-        int[] numbers2=getEvenNumbers(numbers);
+        int[] numbers2=filterEvenNumbers(numbers);
         for(int n:numbers2){
             IO.print(n+" ");
         }
-        int[] numbers3=getOddNumbers(numbers);
+        int[] numbers3=filterOddNumbers(numbers);
         for(int n:numbers3){
             IO.print(n+" ");
         }
